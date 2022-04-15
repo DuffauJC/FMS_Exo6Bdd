@@ -4,10 +4,9 @@
 package fr.fms.dao;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
-import fr.fms.entities.Article;
+
 
 /**
  * @author Stagiaires08P
@@ -15,7 +14,7 @@ import fr.fms.entities.Article;
  */
 public interface Dao<T> {
 
-	public Connection connection=BddConnection.getConnection();
+	public Connection connection=ConnectBdd.Connexion().getConnection();
 	public void create(T obj);               // ajout d'une nouvelle occurence en base
 	public T read(int id);					 // renvoi un objet correspondant à l'id en base
 	public boolean update(T obj);            // met à jour l'objet en base, renvoi vrai si c'est fait

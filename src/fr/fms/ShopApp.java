@@ -44,7 +44,7 @@ public class ShopApp {
 
 
 		// lecture de la table articles
-		System.out.println("Liste des articles : ");
+		//System.out.println("Liste des articles : ");
 		//for(Article a : shop.readAll())
 		//System.out.println(a);
 		System.out.println("-------------------------------------------------------");
@@ -73,8 +73,8 @@ public class ShopApp {
 
 		// lecture de la table users
 		System.out.println("Liste des utilisateurs : ");
-		for(User u : user.readAll())
-			System.out.println(u);
+		//for(User u : user.readAll())
+		//System.out.println(u);
 		System.out.println("-------------------------------------------------------");
 
 
